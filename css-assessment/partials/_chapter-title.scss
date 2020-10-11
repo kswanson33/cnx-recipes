@@ -1,0 +1,24 @@
+$text-color: #0074BC;
+$font-stack-chapter: Muli, sans-serif;
+$font-stack-title: IBM Plex Sans, sans-serif;
+
+h1[data-type="document-title"] {
+    span.os-divider {
+        display: block;
+    }
+    font-family: $font-stack-chapter;
+    color: $text-color;
+    margin-right: 8px;
+    font-weight: bolder;
+    line-height: 1.5rem;
+    font-size: 2rem;
+    letter-spacing: 0.1rem; 
+    text-transform: uppercase;
+    .os-text {
+        font-family: $font-stack-title;
+        font-size: 3.5rem;
+        line-height: 3rem;
+        font-weight: lighter;
+        color: #000000;
+    }
+}

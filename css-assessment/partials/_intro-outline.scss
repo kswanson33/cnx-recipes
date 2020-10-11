@@ -1,0 +1,56 @@
+$outline-bg: #0074BC;
+$ibm-font: IBM Plex Sans, sans-serif;
+
+.intro-body {
+    display: grid;
+    grid-template-columns: 1 2;
+    grid-auto-flow: dense;
+    // -ms-grid-template-columns: 1 2;
+    // -ms-grid-auto-flow: dense;
+    margin-top: 10px;
+    .intro-text {
+        grid-column: 1;
+        // -ms-grid-column: 1;
+        h2 {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 12px;
+        }
+        p {
+            margin-bottom: 0.7rem;
+        }
+    }
+    .os-chapter-outline {
+        grid-column: 2;
+        // -ms-grid-column: 2;
+        background-color: $outline-bg;
+        font-family: $ibm-font;
+        font-size: 1rem;
+        font-weight: 500;
+        width: 2.15in;
+        margin-right: 1.2rem;
+        margin-left: 1.5rem;
+        padding: 1.5rem 0rem 1.5rem 1.5rem;
+        color: white;
+        h3.os-title {
+            border-bottom: white 1px solid;
+            line-height: 1.5rem;
+            padding-bottom: 10px;
+            margin-top: 0px;
+        }
+        div.os-chapter-objective {
+            padding-right: 1.5rem;
+            margin-bottom: 10px;
+            a.os-chapter-objective { // override <a> element characteristics
+                color: white;
+                text-decoration: none;
+                display: grid;
+                grid-template-columns: auto auto auto;  // side-by-side display for section numbering
+                span.os-divider {
+                    width: 10px;    // space between section number and section title
+                }
+            }
+            
+        }
+    }
+}

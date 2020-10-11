@@ -50,6 +50,55 @@ h1[data-type=document-title] .os-text {
   color: #000000;
 }
 
+.intro-body {
+  display: grid;
+  grid-template-columns: 1 2;
+  grid-auto-flow: dense;
+  margin-top: 10px;
+}
+.intro-body .intro-text {
+  grid-column: 1;
+}
+.intro-body .intro-text h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+}
+.intro-body .intro-text p {
+  margin-bottom: 0.7rem;
+}
+.intro-body .os-chapter-outline {
+  grid-column: 2;
+  background-color: #0074BC;
+  font-family: IBM Plex Sans, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 2.15in;
+  margin-right: 1.2rem;
+  margin-left: 1.5rem;
+  padding: 1.5rem 0rem 1.5rem 1.5rem;
+  color: white;
+}
+.intro-body .os-chapter-outline h3.os-title {
+  border-bottom: white 1px solid;
+  line-height: 1.5rem;
+  padding-bottom: 10px;
+  margin-top: 0px;
+}
+.intro-body .os-chapter-outline div.os-chapter-objective {
+  padding-right: 1.5rem;
+  margin-bottom: 10px;
+}
+.intro-body .os-chapter-outline div.os-chapter-objective a.os-chapter-objective {
+  color: white;
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.intro-body .os-chapter-outline div.os-chapter-objective a.os-chapter-objective span.os-divider {
+  width: 10px;
+}
+
 [data-type=chapter] {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 12px;

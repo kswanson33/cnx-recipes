@@ -62,3 +62,7 @@ data/.DS_Store
 # Style files
 #styles/output/_web-styles.json
 styles/test/test-coverage.log
+
+# Assessment files
+/css-assessment/instructions.html
+/css-assessment/stylesheet-pdf.css.map

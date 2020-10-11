@@ -1,0 +1,11 @@
+@use './partials/chapter-content';
+
+$default-font-stack: 'IBM Plex Sans', sans-serif;
+$default-font-size: 12px;
+$default-font-color: #000000;
+
+[data-type="chapter"] {
+    font-family: $default-font-stack;
+    font-size: $default-font-size;
+    color: $default-font-color;
+}

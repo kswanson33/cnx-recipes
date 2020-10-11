@@ -1,0 +1,38 @@
+[data-type=page].chapter-content-module {
+  color: #0074BC;
+  font-family: Muli, sans-serif;
+  line-height: 1.5rem;
+}
+[data-type=page].chapter-content-module h2 {
+  margin: 10px 0px 10px 0px;
+  font-weight: bolder;
+  font-size: 1.7rem;
+}
+[data-type=page].chapter-content-module h3 {
+  font-weight: bolder;
+  margin: 0px;
+  font-size: 16px;
+}
+[data-type=page].chapter-content-module p {
+  font-style: italic;
+  margin: 0px;
+}
+[data-type=page].chapter-content-module ul {
+  margin: 0px;
+  padding-left: 30px;
+  font-size: 1rem;
+}
+[data-type=page].chapter-content-module li {
+  color: black;
+}
+[data-type=page].chapter-content-module li::marker {
+  color: #0074BC;
+}
+
+[data-type=chapter] {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 12px;
+  color: #000000;
+}
+
+/*# sourceMappingURL=stylesheet-pdf.css.map */

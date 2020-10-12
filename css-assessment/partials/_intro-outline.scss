@@ -1,16 +1,15 @@
 $outline-bg: #0074BC;
 $ibm-font: IBM Plex Sans, sans-serif;
 
+@page {
+    content: flow(os-chapter-outline);
+}
+
 .intro-body {
-    display: grid;
-    grid-template-columns: 1 2;
-    grid-auto-flow: dense;
-    // -ms-grid-template-columns: 1 2;
-    // -ms-grid-auto-flow: dense;
+    display: flex;
+    flex-direction: row-reverse;
     margin-top: 10px;
     .intro-text {
-        grid-column: 1;
-        // -ms-grid-column: 1;
         h2 {
             text-transform: uppercase;
             font-weight: 700;
@@ -21,8 +20,6 @@ $ibm-font: IBM Plex Sans, sans-serif;
         }
     }
     .os-chapter-outline {
-        grid-column: 2;
-        // -ms-grid-column: 2;
         background-color: $outline-bg;
         font-family: $ibm-font;
         font-size: 1rem;
@@ -44,8 +41,8 @@ $ibm-font: IBM Plex Sans, sans-serif;
             a.os-chapter-objective { // override <a> element characteristics
                 color: white;
                 text-decoration: none;
-                display: grid;
-                grid-template-columns: auto auto auto;  // side-by-side display for section numbering
+                display: flex;
+                flex-direction: row;
                 span.os-divider {
                     width: 10px;    // space between section number and section title
                 }

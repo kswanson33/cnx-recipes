@@ -50,14 +50,13 @@ h1[data-type=document-title] .os-text {
   color: #000000;
 }
 
-.intro-body {
-  display: grid;
-  grid-template-columns: 1 2;
-  grid-auto-flow: dense;
-  margin-top: 10px;
+@page {
+  content: flow(os-chapter-outline);
 }
-.intro-body .intro-text {
-  grid-column: 1;
+.intro-body {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 10px;
 }
 .intro-body .intro-text h2 {
   text-transform: uppercase;
@@ -68,7 +67,6 @@ h1[data-type=document-title] .os-text {
   margin-bottom: 0.7rem;
 }
 .intro-body .os-chapter-outline {
-  grid-column: 2;
   background-color: #0074BC;
   font-family: IBM Plex Sans, sans-serif;
   font-size: 1rem;
@@ -92,8 +90,8 @@ h1[data-type=document-title] .os-text {
 .intro-body .os-chapter-outline div.os-chapter-objective a.os-chapter-objective {
   color: white;
   text-decoration: none;
-  display: grid;
-  grid-template-columns: auto auto auto;
+  display: flex;
+  flex-direction: row;
 }
 .intro-body .os-chapter-outline div.os-chapter-objective a.os-chapter-objective span.os-divider {
   width: 10px;

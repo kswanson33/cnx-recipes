@@ -1,0 +1,27 @@
+$left-color: #0074BC;
+$caption-color: #EEEAE0;
+$figure-name-color: #C31427;
+
+div.os-figure.has-splash {
+    margin-bottom: 2rem;
+    .splash {
+        background-color: $left-color;
+        padding-left: 1in;  // temporary
+        margin-left: 0;
+        margin-bottom: 0;
+        img {
+            width: 8.15in;
+        }
+    }
+    .os-caption-container {
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        background-color: $caption-color;
+        font-family: IBM Plex Sans;
+        .os-title-label, .os-number {
+            color: $figure-name-color;
+            font-family: Muli;
+            font-weight: bold;
+        }
+    }
+}

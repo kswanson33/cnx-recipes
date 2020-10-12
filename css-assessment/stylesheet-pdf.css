@@ -30,17 +30,19 @@
 }
 
 h1[data-type=document-title] {
-  font-family: Muli, sans-serif;
-  color: #0074BC;
-  margin-right: 8px;
-  font-weight: bolder;
   line-height: 1.5rem;
   font-size: 2rem;
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
+  margin-right: 8px;
 }
 h1[data-type=document-title] span.os-divider {
   display: block;
+}
+h1[data-type=document-title] .os-part-text, h1[data-type=document-title] .os-number {
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-family: Muli, sans-serif;
+  color: #0074BC;
 }
 h1[data-type=document-title] .os-text {
   font-family: IBM Plex Sans, sans-serif;
@@ -58,13 +60,19 @@ h1[data-type=document-title] .os-text {
   flex-direction: row-reverse;
   margin-top: 10px;
 }
+.intro-body .intro-text {
+  margin-bottom: 0.7rem;
+  font-size: 12px;
+}
 .intro-body .intro-text h2 {
+  display: inline;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 12px;
+  margin-right: 5px;
 }
 .intro-body .intro-text p {
-  margin-bottom: 0.7rem;
+  display: inline;
 }
 .intro-body .os-chapter-outline {
   background-color: #0074BC;
@@ -95,6 +103,30 @@ h1[data-type=document-title] .os-text {
 }
 .intro-body .os-chapter-outline div.os-chapter-objective a.os-chapter-objective span.os-divider {
   width: 10px;
+}
+
+div.os-figure.has-splash {
+  margin-bottom: 2rem;
+}
+div.os-figure.has-splash .splash {
+  background-color: #0074BC;
+  padding-left: 1in;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+div.os-figure.has-splash .splash img {
+  width: 8.15in;
+}
+div.os-figure.has-splash .os-caption-container {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  background-color: #EEEAE0;
+  font-family: IBM Plex Sans;
+}
+div.os-figure.has-splash .os-caption-container .os-title-label, div.os-figure.has-splash .os-caption-container .os-number {
+  color: #C31427;
+  font-family: Muli;
+  font-weight: bold;
 }
 
 /* cyrillic-ext */

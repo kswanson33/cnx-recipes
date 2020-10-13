@@ -1,0 +1,13 @@
+$page-margin: 80px;
+
+%extend-margin-left {
+    position: relative;
+    padding-left: $page-margin;
+    left: -$page-margin;
+}
+
+%extend-margin-right {
+    position: relative;
+    margin-right: -$page-margin * 2;
+    padding-right: $page-margin;
+}

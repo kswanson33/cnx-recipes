@@ -105,17 +105,27 @@ h1[data-type=document-title] .os-text {
   width: 10px;
 }
 
+div.os-figure.has-splash .splash, div.os-figure.has-splash .os-caption-container {
+  position: relative;
+  padding-left: 80px;
+  left: -80px;
+}
+
+div.os-figure.has-splash .os-caption-container {
+  position: relative;
+  margin-right: -160px;
+  padding-right: 80px;
+}
+
 div.os-figure.has-splash {
   margin-bottom: 2rem;
 }
 div.os-figure.has-splash .splash {
   background-color: #0074BC;
-  padding-left: 1in;
-  margin-left: 0;
-  margin-bottom: 0;
 }
 div.os-figure.has-splash .splash img {
   width: 8.15in;
+  display: block;
 }
 div.os-figure.has-splash .os-caption-container {
   padding-top: 1rem;

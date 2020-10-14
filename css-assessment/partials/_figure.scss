@@ -19,7 +19,7 @@ div.os-figure.has-splash {
         padding-bottom: 2rem;
         background-color: $caption-color;
         font-family: IBM Plex Sans;
-        // make the caption flow into the margins
+        // make the caption flow into the pdf margins
         @extend %extend-margin-left;
         @extend %extend-margin-right;
         .os-title-label, .os-number {

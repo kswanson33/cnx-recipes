@@ -18,7 +18,7 @@ div.os-figure.has-splash {
         padding-top: 1rem;
         padding-bottom: 2rem;
         background-color: $caption-color;
-        font-family: IBM Plex Sans;
+        font-family: "IBM Plex Sans";
         // make the left and right caption padding flow into the pdf margins
         @extend %flow-padding-into-left-margin;
         @extend %flow-padding-into-right-margin;

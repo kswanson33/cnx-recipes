@@ -1,12 +1,12 @@
+@use './fonts/font-ibm-plex-sans';
+@use './fonts/font-muli';
+
 @use './partials/chapter-content';
 @use './partials/chapter-title';
 @use './partials/intro-outline';
 @use './partials/figure';
 
-@use './font-ibm-plex-sans';
-@use './font-muli';
-
-$default-font-stack: 'IBM Plex Sans', sans-serif;
+$default-font-stack: 'IBM Plex Sans';
 $default-font-size: 12px;
 $default-font-color: #000000;
 

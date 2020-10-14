@@ -1,18 +1,9 @@
-//@use '../custom-properties/extend-margins';
-
-$page-margin: 2rem;
-
+$page-margin: 4.5rem;
 $outline-bg: #0074BC;
-$ibm-font: IBM Plex Sans, sans-serif;
-
-@page {
-    content: flow(os-chapter-outline);
-}
 
 .intro-body {
     display: flex;
     flex-direction: row-reverse;
-    //margin-top: 10px;
     .intro-text { // introduction
         margin-bottom: 0.7rem;
         font-size: 12px;
@@ -27,19 +18,19 @@ $ibm-font: IBM Plex Sans, sans-serif;
             display: inline;
         }
     }
-    .os-chapter-outline {  // blue-boxed outline
+    .os-chapter-outline {  // blue-boxed chapter outline
         position: relative;
         background-color: $outline-bg;
-        font-family: $ibm-font;
+        font-family: IBM Plex Sans;
         font-size: 1rem;
         font-weight: 500;
         width: 2.15in;
         min-width: 2.15in;
-        // move into pdf margins
-        margin-right: 1.2rem - $page-margin *2;
-        margin-left: 1.5rem;
         padding: 1.5rem 0rem 1.5rem 1.5rem;
         color: white;
+        // flow element into pdf margins
+        margin-right: 1.2rem - $page-margin;
+        margin-left: 1.5rem;
         h3.os-title {
             border-bottom: white 1px solid;
             line-height: 1.5rem;

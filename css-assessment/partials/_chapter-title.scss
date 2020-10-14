@@ -1,6 +1,4 @@
 $text-color: #0074BC;
-$font-stack-chapter: Muli, sans-serif;
-$font-stack-title: IBM Plex Sans, sans-serif;
 
 h1[data-type="document-title"] {
     span.os-divider { // creates a line break between chapter numbering and title
@@ -14,11 +12,11 @@ h1[data-type="document-title"] {
         font-weight: bolder;
         text-transform: uppercase;
         letter-spacing: 0.1rem; 
-        font-family: $font-stack-chapter;
+        font-family: Muli;
         color: $text-color;
     }
     .os-text { // title of the chapter
-        font-family: $font-stack-title;
+        font-family: IBM Plex Sans;
         font-size: 3.5rem;
         line-height: 3rem;
         font-weight: lighter;

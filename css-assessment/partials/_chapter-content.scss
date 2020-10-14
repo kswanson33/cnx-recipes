@@ -1,9 +1,8 @@
 $header-blue: #0074BC;
-$font-stack: Muli, sans-serif;
 
 [data-type="page"].chapter-content-module {
     color: $header-blue;
-    font-family: $font-stack;
+    font-family: Muli;
     line-height: 1.5rem;
     h2 {    // Section header
         margin: 10px 0px 10px 0px;
@@ -11,23 +10,24 @@ $font-stack: Muli, sans-serif;
         font-size: 1.7rem;
     }
     h3 { // Learning Objectives
-        font-weight: bolder;
+        font-weight: 900;
         margin: 0px;
-        font-size: 16px;
+        font-size: 1rem;
     }
     p { // subheader
         font-style: italic;
         margin: 0px;
+        font-size: 1rem;
     }
-    ul { // 
+    ul {
         margin: 0px;
         padding-left: 30px;
         font-size: 1rem;
     }
-    li { // 
+    li {
         color: black;
     }
-    li::marker { // 
+    li::marker {
         color: $header-blue;
     }
 }

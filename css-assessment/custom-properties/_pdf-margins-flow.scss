@@ -1,12 +1,12 @@
-$page-margin: 80px;
+$page-margin: 4.5rem;
 
-%extend-margin-left {
+%flow-padding-into-left-margin {
     position: relative;
     padding-left: $page-margin;
     left: -$page-margin;
 }
 
-%extend-margin-right {
+%flow-padding-into-right-margin {
     position: relative;
     margin-right: -$page-margin * 2;
     padding-right: $page-margin;

@@ -1,6 +1,6 @@
 [data-type=page].chapter-content-module {
   color: #0074BC;
-  font-family: Muli, sans-serif;
+  font-family: Muli;
   line-height: 1.5rem;
 }
 [data-type=page].chapter-content-module h2 {
@@ -9,13 +9,14 @@
   font-size: 1.7rem;
 }
 [data-type=page].chapter-content-module h3 {
-  font-weight: bolder;
+  font-weight: 900;
   margin: 0px;
-  font-size: 16px;
+  font-size: 1rem;
 }
 [data-type=page].chapter-content-module p {
   font-style: italic;
   margin: 0px;
+  font-size: 1rem;
 }
 [data-type=page].chapter-content-module ul {
   margin: 0px;
@@ -41,32 +42,17 @@ h1[data-type=document-title] .os-part-text, h1[data-type=document-title] .os-num
   font-weight: bolder;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  font-family: Muli, sans-serif;
+  font-family: Muli;
   color: #0074BC;
 }
 h1[data-type=document-title] .os-text {
-  font-family: IBM Plex Sans, sans-serif;
+  font-family: IBM Plex Sans;
   font-size: 3.5rem;
   line-height: 3rem;
   font-weight: lighter;
   color: #000000;
 }
 
-div.os-figure.has-splash .splash, div.os-figure.has-splash .os-caption-container {
-  position: relative;
-  padding-left: 80px;
-  left: -80px;
-}
-
-div.os-figure.has-splash .os-caption-container {
-  position: relative;
-  margin-right: -160px;
-  padding-right: 80px;
-}
-
-@page {
-  content: flow(os-chapter-outline);
-}
 .intro-body {
   display: flex;
   flex-direction: row-reverse;
@@ -88,15 +74,15 @@ div.os-figure.has-splash .os-caption-container {
 .intro-body .os-chapter-outline {
   position: relative;
   background-color: #0074BC;
-  font-family: IBM Plex Sans, sans-serif;
+  font-family: IBM Plex Sans;
   font-size: 1rem;
   font-weight: 500;
   width: 2.15in;
   min-width: 2.15in;
-  margin-right: -2.8rem;
-  margin-left: 1.5rem;
   padding: 1.5rem 0rem 1.5rem 1.5rem;
   color: white;
+  margin-right: -3.3rem;
+  margin-left: 1.5rem;
 }
 .intro-body .os-chapter-outline h3.os-title {
   border-bottom: white 1px solid;
@@ -120,6 +106,18 @@ div.os-figure.has-splash .os-caption-container {
   width: 10px;
 }
 
+div.os-figure.has-splash .splash, div.os-figure.has-splash .os-caption-container {
+  position: relative;
+  padding-left: 4.5rem;
+  left: -4.5rem;
+}
+
+div.os-figure.has-splash .os-caption-container {
+  position: relative;
+  margin-right: -9rem;
+  padding-right: 4.5rem;
+}
+
 div.os-figure.has-splash {
   margin-bottom: 2rem;
 }
@@ -140,6 +138,11 @@ div.os-figure.has-splash .os-caption-container .os-title-label, div.os-figure.ha
   color: #C31427;
   font-family: Muli;
   font-weight: bold;
+}
+div.os-figure.has-splash .os-caption-container .os-divider {
+  display: inline-block;
+  min-width: 2px;
+  width: 2px;
 }
 
 /* cyrillic-ext */
